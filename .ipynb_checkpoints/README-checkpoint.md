@@ -22,6 +22,11 @@ The final system allows users to explore books and receive recommendations throu
 ## Data Sources
 
 
+| Dataset                        | Source                                                    | Purpose                                                                                    |
+| :----------------------------- | :-------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
+| **openlibrary**                | https://openlibrary.org/subjects/awards                   | Core data for books and awards given                                                       |
+
+
 
 
 
@@ -41,7 +46,7 @@ The final system allows users to explore books and receive recommendations throu
 
 ## Deployment
 
-## Streamlit
+**Streamlit**
 
 The final model was deployed using Streamlit to provide an interactive interface where users can:
 
@@ -57,7 +62,7 @@ The final model was deployed using Streamlit to provide an interactive interface
 
 [Streamlit link here]
 
-## Presentation
+**Presentation**
 
 A project presentation summarising the methodology, insights, and deployment is available below:
 
