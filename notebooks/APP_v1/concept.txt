@@ -1,0 +1,26 @@
+I'm creating a book app, that also recommends books. For that we will have an engine system for search and an engine system for recommendations. the database is @books_merged_clean.csv  Here are the elementary way I was thinking it to work.:
+
+
+Let's start by defining how the 2 main engines systems.
+Search engine system:
+- Search A: More straightforward and literal. You can find it under def find_books_by_keyword on @BRS - TFIDF_Antonio.ipynb . Anyway it will always search  in any of the categories adn columns that the books have.
+- Search B: It is not so strict and will find results by similar words or fields in common. Use @SBERT.ipynb .
+- The system: I want Search A to appear in the results first, since it will show more accurate results, and after that search B. This will make that if Search A has 3 results, they will appear first and then it will show 7 more results from search B (related to the field or whatever).
+
+
+Recommendation engine system:
+- Recommendation A: One is a more concise and precise results using TDIDF and cosine similarity, you can find it with the def_get recommendations in @BRS - TFIDF_Antonio.ipynb. The results are weighted in df['soup'].
+- Recommendation B: Uses sBERTa, it is less precise but understands better semantic, therefore finding by words that may have relation. You can find it under @SBERT.ipynb .
+- The system: I want Recommendation A to appear first in the results, since it will show more accurate results. The results are weighted in df['soup'], so he will recommend first same author's books, similar title, etc. After that Recommendation B.
+
+The App. Please take as a refference the attached image to guide the user by the 3 steps:
+1 - Main page, the user opens the app
+by typing triggers the search engine system
+2- Search results
+by inputing a text again it brings to step 3.1 - results and loops
+by clicking in a book it brings to step 3.2 - results and loops and triggers recomendation engine system.
+3.1- results and loops: shows new results of the new search. By clicking in a book brings to 3.2
+3.2 - Shows the selected book bigger and shows results from recommendation system bellow
+
+Create a .py file with all of this architecture trying to reuse as much code from the mentioned sources as possible.
+
