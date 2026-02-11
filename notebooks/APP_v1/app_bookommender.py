@@ -318,8 +318,8 @@ def display_book_card(book_data, show_search_type=False, show_recommendation_typ
             st.markdown(f"**Author:** {book_data['author']}")
             st.markdown(f"**Year:** {book_data['published_year']}  |  **Language:** {book_data['language']}")
 
-            if show_search_type and 'search_type' in book_data:
-                st.markdown(f"**Search Type:** {book_data['search_type']}")
+            # if show_search_type and 'search_type' in book_data:
+            #     st.markdown(f"**Search Type:** {book_data['search_type']}")
 
 
             # Add clickable button for this book
