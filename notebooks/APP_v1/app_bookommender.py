@@ -89,7 +89,6 @@ def load_or_create_sbert_embeddings(_model, content_list):
             
             # Save embeddings for future use
             np.save(embeddings_path, embeddings)
-            st.success("Embeddings generated and saved successfully!")
             return embeddings
         except Exception as e:
             st.error(f"Error generating embeddings: {e}")
