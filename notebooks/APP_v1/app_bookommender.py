@@ -504,9 +504,16 @@ def main_page():
     """Homepage with centered image"""
     # Shift image to the right by making center column wider
     left, center, right = st.columns([10, 5, 10])
-    
+    script_directory = os.path.dirname(__file__)
+    # Join it with the image filename
+    image_path = os.path.join(script_directory, "pexels-suzyhazelwood-1333742.jpg")
+
     with center:
-        st.image("pexels-suzyhazelwood-1333742.jpg", width=500)
+        # Use the absolute path calculated above
+        if os.path.exists(image_path):
+            st.image(image_path, width=500)
+        else:
+            st.error(f"Image not found at {image_path}. Please check your folder structure!")
 
 if __name__ == "__main__":
     # Initialize session state
