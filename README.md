@@ -60,7 +60,9 @@ The final model was deployed using Streamlit to provide an interactive interface
 
 **🔗 Streamlit App**
 
-[Streamlit link here]
+[here](https://bookommender.streamlit.app)
+
+Photo credit (https://www.pexels.com/de-de/foto/gestapelte-bucher-1333742/)
 
 **Presentation**
 
@@ -68,7 +70,7 @@ A project presentation summarising the methodology, insights, and deployment is 
 
 **🎥 Project Presentation**
 
-[presentation link here]
+[here](https://docs.google.com/presentation/d/1pwWplNvwnvt5cUMMA9SmXHMJTrSgokQhoSL6ocWgKiE/edit?usp=sharing)
 
 
 
